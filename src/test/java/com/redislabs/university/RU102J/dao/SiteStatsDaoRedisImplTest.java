@@ -60,7 +60,6 @@ public class SiteStatsDaoRedisImplTest {
         assertThat(stats.getMaxWhGenerated(), is(r1.getWhGenerated()));
     }
 
-    // Challenge #3
     @Test
     public void testUpdate() {
         SiteStatsDao dao = new SiteStatsDaoRedisImpl(jedisPool);
